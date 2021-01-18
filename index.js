@@ -31,9 +31,9 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Affis Admin\n' 
-            + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
+            + 'FN:MIMIM Admin\n' 
+            + 'ORG: Pengembang BOT-WA;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6287848115476:+62 878-4811-5476\n' 
             + 'END:VCARD' 
 prefix = '#'
 blocked = []          
@@ -189,7 +189,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini`
+				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* semoga betah di sini ya`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -238,7 +238,7 @@ client.on('group-participants-update', async (anu) => {
 			
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6282334297175@s.whatsapp.net"] 
+			const ownerNumber = ["6287848115476@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			pushname = client.contacts[sender] != undefined ? client.contacts[sender].vname || client.contacts[sender].notify : undefined
@@ -382,7 +382,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*OWNER* : *AMPIBI*\n*AUTHOR* : AMPIBI\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*OWNER* : *MIMIM*\n*AUTHOR* : MIMIM\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
