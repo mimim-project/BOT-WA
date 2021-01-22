@@ -1,7 +1,7 @@
 {
-  "name": "BOT-WA",
+  "name": "XBOT",
   "version": "1.0.0",
-  "description": "bot-wa for whatsapp online with termux",
+  "description": "Xbot for whatsapp online with termux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -13,15 +13,15 @@
   "keywords": [
     "k"
   ],
-  "author": "mimim project",
+  "author": "affis junianto",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mimim-project/BOT-WA.git"
+    "url": "git+https://github.com/affisjunianto/botwasapv2.git"
   },
   "bugs": {
-    "url": "https://github.com/mimim-project/BOT-WA/issues"
+    "url": "https://github.com/affisjunianto/botwasapv2/issues"
   },
-"homepage": "https://github.com/mimim-project/BOT-WA/readme",
+"homepage": "https://github.com/affisjunianto/botwasapv2/readme",
 "license": "ISC",
 "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
@@ -29,6 +29,7 @@
     "axios": "^0.21.0",
     "cfonts": "^2.9.0",
     "dotenv": "^8.2.0",
+    "brainly-scraper": "^1.0.3",
     "escape-string-regexp": "^1.0.5",
     "fake-useragent": "^1.0.1",
     "fluent-ffmpeg": "^2.1.2",
