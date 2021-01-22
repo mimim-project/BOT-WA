@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar mimim|17*`
 }
 
 exports.rediregis = () => {
@@ -123,7 +123,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ╠☞ *XP* : ${getLevelingXp(sender)}/${reqXp}
 ╠☞ *Level* : ${getLevelingLevel(sender)}
 ╠☞ *User register* : ${_registered.length}
-╰════─⊱  ⸨ *AFFIS* ⸩  ⊰─════╯
+╰════─⊱  ⸨ *MIMIM* ⸩  ⊰─════╯
 
             𝐑𝐮𝐥𝐞𝐬 - 𝐒𝐢𝐦𝐩𝐥𝐞
 ▬▭▬▭▬▭▬▭▬▭▬▭▬
@@ -222,7 +222,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ╠☞ *XPTN (AGUNG)*
 ╠☞ *MYBOT TEAM*
 ║
-╰════─⊱  ⸨ *AFFIS* ⸩  ⊰─════╯
+╰════─⊱  ⸨ *MIMIM* ⸩  ⊰─════╯
 `
 }
 
