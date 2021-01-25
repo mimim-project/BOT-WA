@@ -1,3 +1,11 @@
+/*
+*DILARANG RECODE TANPA CREDIT!! NO CREDIT = GABAKAL UP SC LAGI!!
+*AWAS AE KALO KETAUAN_-
+*SUBSCRIBE YOUTUBE KAMI
+*Fadhil : Fadhil Graphy
+*Affis : Ampibi Gaming
+*/
+
 const {
    WAConnection,
    MessageType,
@@ -32,19 +40,19 @@ const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
-const vcard = 'BEGIN:VCARD\n' 
-            + 'VERSION:3.0\n' 
-            + 'FN:꧁🅼🅸🅼🅸🅼_ＰＲＯＪＥＣＴ彡★ ☆ ★\n' 
-            + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6287848115476:+62 878-4811-5476\n' 
-            + 'END:VCARD' 
+const vcard = 'BEGIN:VCARD\n' //GANTI NO DAN NAMA DIBAWAH INI JADI PUNYA LU
+            + 'VERSION:3.0\n' //JANGAN HILANGKAN CREDIT
+            + 'FN:Fadhil Graphy\n' //PENGEMBANG BY :
+            + 'ORG: Pengembang Fadhil Bot;\n' //MYBOT TEAM
+            + 'TEL;type=CELL;type=VOICE;waid=6288221608614:+62 882-2160-8614\n' 
+            + 'END:VCARD' //SCRIPT ORI FROM MAHANKBARBAR
 prefix = '#'
 blocked = []   
 limitawal = '20'
-cr = '*BOT INI SUDAH TERVERIFIKASI*'
+cr = '*FADHIL BOT*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["62895710073737@s.whatsapp.net","6282334297174@s.whatsapp.net"] 
+const ownerNumber = ["6288221608614@s.whatsapp.net","6283102650464@s.whatsapp.net"] //ganti nomor lu
 /************************************/
 
        
@@ -253,7 +261,7 @@ function kyun(seconds){
 const client = new WAConnection()
    client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(color('[','white'),color('∆','red'),color(']','white'),color('qr already scan.follow','white'),color('INSTA','red'),color('GRAM','white'),color('@pingin_waras','yellow'))
+   console.log(color('[','white'),color('∆','red'),color(']','white'),color('qr code is ready. subscribe','white'),color('YOU','red'),color('TUBE','white'),color('Fadhil Graphy','yellow'))
 })
 
 client.on('credentials-updated', () => {
@@ -277,7 +285,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo lur @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* mugi njenengan betah ten mriki lur🙏`
+				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -287,7 +295,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Astagfirullah Kenopo Metu lur:( 𝟭,bye bye🥳 @${num.split('@')[0]} Tanpamu Aku Raiso Turu😭`
+				teks = `akhirnya beban group berkurang 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -718,7 +726,7 @@ client.on('group-participants-update', async (anu) => {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n\nDari Grup : ${groupName}\nPengirim : wa.me/${(sender.split('@')[0])}\nPesan : ${body.slice(6)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `*「 BROADCAST GROUP 」*\n\nDari Grup : ${groupName}\nPengirim : wa.me/${(sender.split('@')[0])}\nPesan : ${body.slice(6)}`})
 						}
 						reply('')
 					} else {
@@ -1238,12 +1246,12 @@ client.on('group-participants-update', async (anu) => {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `❮ 𝙋𝙀𝙎𝘼?? 𝘽??𝙊𝘼𝘿𝘾𝘼𝙎𝙏 ❯\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `❮ *FADHIL BOT BROADCAST*❯\n\n${body.slice(4)}`})
 						}
 						reply('𝙨𝙪𝙘𝙘𝙚𝙨𝙨 𝙗𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 ')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST BOT 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 *FADHIL BOT BROADCAST* 」*\n\n${body.slice(4)}`)
 						}
 						reply('𝙨𝙪𝙘𝙘𝙚𝙨𝙨 𝙗𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 ')
 					}
@@ -1350,19 +1358,19 @@ client.on('group-participants-update', async (anu) => {
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `SUKSES NGEKICK WONG ASU 🏃 :\n`
+							teks += `𝗔𝘀𝗲𝗸 𝗱𝗮𝗽𝗮𝘁 𝗺𝗮𝗸𝗮𝗻𝗮𝗻,𝗼𝘁𝘄 𝗸𝗶𝗰𝗸 🏃 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`SUKSES NGE-KICK WONG ASU @${mentioned[0].split('@')[0]} 🏃`, mentioned, true)
+						mentions(`𝗔𝘀𝗲𝗸 𝗱𝗮𝗽𝗮𝘁 𝗺𝗮𝗸𝗮𝗻𝗮𝗻,𝗼𝘁𝘄 𝗸𝗶𝗰𝗸 @${mentioned[0].split('@')[0]} 🏃`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
 				case 'listadmin':
 					if (!isGroup) return reply(ind.groupo())
-					teks = `ADMIN LEWAT *${groupMetadata.subject}*\n𝗧𝗼𝘁𝗮𝗹 : ${groupAdmins.length}\n\n`
+					teks = `𝗟𝗶𝘀𝘁 𝗮𝗱𝗺𝗶𝗻 𝗼𝗳 𝗴𝗿𝗼𝘂𝗽 *${groupMetadata.subject}*\n𝗧𝗼𝘁𝗮𝗹 : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
 						no += 1
@@ -1523,3 +1531,17 @@ client.on('group-participants-update', async (anu) => {
 			console.log('Error : %s', color(e, 'red'))
 		}
 	})
+
+/*
+*JANGAN HILANGKAN CREDIT SU!!
+*SPECIAL THANGKS TO
+*AFFIS JUNIANTO
+*FADHIL GRAPHY
+*MAHANKBARBAR
+*XPTN
+*RISKI
+*BARXNL
+*ANANG
+*BRYAN
+*MYBOT TEAM
+*/
