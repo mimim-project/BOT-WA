@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar mimim|18*`
 }
 
 exports.rediregis = () => {
@@ -124,7 +124,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *Role* : ${role}
 ┣⊱ *Level* : ${getLevelingLevel(sender)}
 ┣⊱ *User register* : ${_registered.length}
-┗━━━⊱  ⸨ *AFFIS* ⸩  ⊰━━━━┛
+┗━━━⊱  ⸨ *MIMIM* ⸩  ⊰━━━━┛
 
 
 ┏━━⊱ *MAKER MENU* ⊰━━┓
@@ -217,10 +217,10 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *MHANKBARBARS* <sc ori>
 ┣⊱ *MYBOT TEAM* <team>
 ┃
-┣⊱ NOTE : TQTO DI HAPUS
-┃ GW GAK UP LAGI OKE
+┣⊱ NOTE : FOLLOW INSTAGRAM @pingin_waras
+
 ┃
-┗━━⊱  ⸨ *X-BOT* ⸩  ⊰━━━━┛
+┗━━⊱  ⸨ *BOT-WA* ⸩  ⊰━━━━┛
 `
 }
 
